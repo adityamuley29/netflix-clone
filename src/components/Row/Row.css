@@ -12,10 +12,10 @@
   display: none;
 }
 .row_poster {
-  max-height: 100px;
-  object-fit: contain;
+  max-height: 200px;
   margin-right: 10px;
   width: 100%;
+  margin-left: 10px;
   transition: transform 450ms;
 }
 .row_poster:hover {
@@ -23,6 +23,45 @@
   opacity: 1;
   cursor: pointer;
 }
-.row_posterLarge{
-    max-height: 250px;
+.row_posterLarge {
+  max-height: 250px;
+}
+.poster_img {
+  max-height: 100px;
+  object-fit: contain;
+}
+.poster_imgLarger{
+max-height: 250px;
+object-fit: contain;
+}
+.movie_info{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0px;
+  height: 100%;
+  
+}
+
+.movie_info h5 {
+  position: absolute;
+  left: 5px;
+  width: 100%;
+  height: auto;
+  bottom: 5px;
+  margin: 10px 0px;
+  /* overflow: hidden; */
+  z-index: 1;
+}
+.movie-fadeBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.91),
+    #111
+  );
 }

@@ -27,7 +27,7 @@ const HomeScreen = () => {
         fetchUrl={requests.fetchTrending}
         
       />
-      <Row
+      {/* <Row
         title="Popular"
         fetchUrl={requests.fetchPopular}
         
@@ -56,7 +56,7 @@ const HomeScreen = () => {
         title="Documentaries"
         fetchUrl={requests.fetchDocumentaries}
         
-      />
+      /> */}
     </div>
   );
 };
