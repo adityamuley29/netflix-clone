@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import Logo from "../../assets/images/netflixLogo";
+
 
 const Poster = ({ movie, baseImageUrl, isLargeRow }) => {
   const [isHover, setIsHover] = useState(false);
@@ -23,12 +23,13 @@ const Poster = ({ movie, baseImageUrl, isLargeRow }) => {
       />
       {isHover ? (
         <div className="movie_info">
-          <h5>
+          <h4>
             {truncate(
               `${movie?.title || movie?.name || movie?.original_name}`,
-              30
+              20
             )}
-          </h5>
+          </h4>
+          <span className="movie_rating">⭐ {movie.vote_average}/10</span>
           <div className="movie-fadeBottom" />
         </div>
       ) : ('')}

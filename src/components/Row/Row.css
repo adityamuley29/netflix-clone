@@ -37,18 +37,19 @@ object-fit: contain;
 .movie_info{
   position: absolute;
   left: 0;
+  bottom: 0;
   width: 100%;
   bottom: 0px;
   height: 100%;
   
 }
 
-.movie_info h5 {
+.movie_info h4 {
   position: absolute;
   left: 5px;
   width: 100%;
   height: auto;
-  bottom: 5px;
+  bottom: 20px;
   margin: 10px 0px;
   /* overflow: hidden; */
   z-index: 1;
@@ -64,4 +65,14 @@ object-fit: contain;
     rgba(37, 37, 37, 0.91),
     #111
   );
+}
+.movie_rating{
+  position: absolute;
+  left: 5px;
+  width: 100%;
+  height: auto;
+  bottom: 5px;
+  margin: 10px 0px;
+  z-index: 1;
+  font-size: 12px;
 }
