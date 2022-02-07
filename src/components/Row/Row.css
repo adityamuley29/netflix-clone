@@ -41,7 +41,16 @@ object-fit: contain;
   width: 100%;
   bottom: 0px;
   height: 100%;
+  animation: movieInfo .5s;
   
+}
+@keyframes movieInfo{
+  0%{
+    opacity: 0.6;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .movie_info h4 {
